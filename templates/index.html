@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A.I. Lovecraft</title>
+</head>
+<body bgcolor="black">
+    <center>
+        <hr width="75%">
+        <h1 style="color:white">
+        <img src="{{url_for('static', filename='rings.gif')}}">
+        <img src="{{url_for('static', filename='skelewalk.gif')}}">
+        A.I. Lovecraft
+        <img src="{{url_for('static', filename='skelewalk.gif')}}">
+        <img src="{{url_for('static', filename='rings.gif')}}">
+        </h1>
+    <hr width="50%">
+    <h2 style="color:red">Lovecraft Stories Written By (finetuned) GPT-2</h2>
+    <img src="{{url_for('static', filename='flamingline.gif')}}">
+    <h3 style="color:red">Enter some starting text for the generation process, then click submit to generate. It may take a while.
+    <br>
+    <form method="POST">
+        <input name="prefix_text">
+        <input type="submit">
+    </form>
+    <img src="{{url_for('static', filename='flamingline.gif')}}">
+    <hr width="75%">
+    {% for line in generated_text %}
+    <h3 width="70%" style="color:white">{{line}}</h3>
+    <hr width="50%">
+    {% endfor %}
+    </center>
+</body>
+</html>
