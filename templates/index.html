@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>A.I. Lovecraft</title>
 </head>
-<body bgcolor="black">
+<body background="{{url_for('static', filename='starsbg.jpeg')}}">
     <center>
         <hr width="75%">
         <h1 style="color:white">
@@ -30,8 +30,12 @@
     <hr width="50%">
     {% endfor %}
 
-    <h3 width="70%" style="color:red">Made with the GPT-2 small model, using the gpt_2_simple package</h3>
     <img src="{{url_for('static', filename='rings.gif')}}">
+    <h3 width="70%" style="color:red">Made with the <a href="https://openai.com/blog/better-language-models/">GPT-2 model</a>, using the <a href="https://github.com/minimaxir/gpt-2-simple">gpt_2_simple package</a></h3>
+    <hr width="75%">
+    <a href="https://github.com/styndall/ailovecraft">github link for this project</a><br>
+    <a href="https://hub.docker.com/repository/docker/stephentyndall/ailovecraft">docker image repository for AI Lovecraft images</a><br>
+    <h4 wodth="60%" style="color:white">web design courtesy of 1995</h4>
     </center>
 </body>
 </html>
