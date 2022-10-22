@@ -1,4 +1,6 @@
 # ailovecraft
 simple app to use gpt-2 to generate lovecraft-style text
 
-Just run the run.sh shell script to pull the latest docker image and run the app locally.
+To run the app locally in a container run:
+ "docker pull stephentyndall/ailovecraft:latest; docker run -p 5000:5000 stephentyndall/ailovecraft:latest"
+in your terminal.
